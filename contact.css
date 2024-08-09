@@ -1,0 +1,113 @@
+/* contact.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: url(background2.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 43px; /* Reduced height for contact page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2); /* Adjusted to center nav */
+    border-bottom: 2px solid #FFFFFF; /* White bottom border */
+    background-color: #494d5f; /* Ensure background color consistency */
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FF5733; /* Orange text color on hover */
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+.hero-image2 {
+    width: 11%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Position fixed to stay in the viewport */
+    top: -43px; /* Adjust top position */
+    left: -5px; /* Adjust left position */
+    z-index: 999; /* Ensure it's above other content if necessary */
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    background-color: #eeb773; /* Beige-brownish background color */
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px; /* Increased maximum width for the form */
+    margin: 20px auto; /* Adjusted margin to center and slightly lower */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem; /* Increased padding for input fields */
+    margin-bottom: 1.5rem; /* Increased margin bottom for input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #FF5733;
+    color: #FFF;
+    padding: 1rem 2rem; /* Increased padding for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem; /* Added margin top for button */
+}
+
+button:hover {
+    background-color: #e14b2e;
+}
+
+#form-status {
+    margin-top: 10px;
+    color: rgb(8, 241, 59); 
+    font-weight: bold;
+}

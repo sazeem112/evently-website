@@ -1,0 +1,119 @@
+/* team.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    
+    background: url(background2.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav {
+    height: 43px; /* Reduced height for about page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((97.5vw - 1300px)/2);
+    border-bottom: 2px solid #FFFFFF; /* White bottom border */
+    background-color: #494d5f; /* Ensure background color consistency */
+    width: 100%;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FF5733; /* Orange text color on hover */
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+.people {
+   
+    padding: 0;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.person-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.person-info {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.person-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.person-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.person-info a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.person-info a:hover {
+    color: #FF5733;
+}
+
+.hero-image2 {
+    width: 11%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Position fixed to stay in the viewport */
+    top: -43px; /* Adjust top position */
+    left: -5px; /* Adjust left position */
+    z-index: 999; /* Ensure it's above other content if necessary */
+}
